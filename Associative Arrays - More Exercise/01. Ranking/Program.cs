@@ -38,9 +38,17 @@ internal class Program
             string password = commands[1];
             string username = commands[2];
             int points = int.Parse(commands[3]);
-            if (!contestPasswords.ContainsKey(contest)) { input = Console.ReadLine(); continue; }
-            if (contestPasswords[contest] != password) { input = Console.ReadLine(); continue; }
-
+            if (!contestPasswords.ContainsKey(contest))
+            {
+                input = Console.ReadLine(); 
+                continue; 
+            }
+            
+            if (contestPasswords[contest] != password) 
+            { 
+                input = Console.ReadLine(); 
+                continue; 
+            }
 
             if (userInfo.ContainsKey(username) && userInfo[username].ContainsKey(contest))
             {
@@ -77,7 +85,9 @@ internal class Program
         foreach (var user in userInfo)
         {
             Console.WriteLine(user.Key);
-            Console.WriteLine(String.Join("\n", user.Value.OrderByDescending(x => x.Value).Select(y => $"#  {y.Key} -> {y.Value}")));            
+            Console.WriteLine(String.Join("\n", user.Value
+                                          .OrderByDescending(x => x.Value)
+                                          .Select(y => $"#  {y.Key} -> {y.Value}")));            
         }
 
     }
