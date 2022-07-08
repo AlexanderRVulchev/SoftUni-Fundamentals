@@ -67,9 +67,12 @@ internal class Program
             else
             {
                 dragonRooster[type].Add(name, new Dragon());
-                if (damage != "null") dragonRooster[type][name].Damage = double.Parse(damage);
-                if (health != "null") dragonRooster[type][name].Health = double.Parse(health);
-                if (armor != "null") dragonRooster[type][name].Armor = double.Parse(armor);
+                if (damage != "null") 
+                    dragonRooster[type][name].Damage = double.Parse(damage);
+                if (health != "null") 
+                    dragonRooster[type][name].Health = double.Parse(health);
+                if (armor != "null") 
+                    dragonRooster[type][name].Armor = double.Parse(armor);
             }
 
         }
@@ -87,15 +90,18 @@ internal class Program
 
         if (damage != "null")
             dragonRooster[type][name].Damage = double.Parse(damage);
-        else dragonRooster[type][name].Damage = 45;
+        else 
+            dragonRooster[type][name].Damage = 45;
 
         if (health != "null")
             dragonRooster[type][name].Health = double.Parse(health);
-        else dragonRooster[type][name].Health = 250;
+        else 
+            dragonRooster[type][name].Health = 250;
 
         if (armor != "null")
             dragonRooster[type][name].Armor = double.Parse(armor);
-        else dragonRooster[type][name].Armor = 10;
+        else 
+            dragonRooster[type][name].Armor = 10;
     }
 
 
