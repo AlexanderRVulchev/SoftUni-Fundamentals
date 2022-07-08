@@ -79,7 +79,9 @@ internal class Program
 
     private static void DisplayResults(Dictionary<string, Dictionary<string, int>> players)
     {
-        foreach (var player in players.OrderByDescending(x => x.Value.Values.Sum()).ThenBy(x => x.Key))
+        foreach (var player in players
+                 .OrderByDescending(x => x.Value.Values.Sum())
+                 .ThenBy(x => x.Key))
         {
             Console.WriteLine($"{player.Key}: {player.Value.Values.Sum()} skill");
             Console.WriteLine(String.Join("\n", player.Value
