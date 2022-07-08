@@ -69,7 +69,10 @@ internal class Program
         {
             int numContests = 1;
             Console.WriteLine($"{contest.Key}: {contest.Value.Count} participants");
-            Console.WriteLine(String.Join("\n", contest.Value.OrderByDescending(x => x.Value).ThenBy(y => y.Key).Select(y => $"{numContests++}. {y.Key} <::> {y.Value}")));
+            Console.WriteLine(String.Join("\n", contest.Value
+                                          .OrderByDescending(x => x.Value)
+                                          .ThenBy(y => y.Key)
+                                          .Select(y => $"{numContests++}. {y.Key} <::> {y.Value}")));
         }
         Console.WriteLine("Individual standings:");
         
