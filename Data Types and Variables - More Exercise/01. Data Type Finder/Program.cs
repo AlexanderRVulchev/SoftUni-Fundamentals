@@ -8,6 +8,7 @@
 
 using System;
 
+
 class Program
 {
     static void Main()
@@ -17,6 +18,7 @@ class Program
         double typeDouble;
         bool typeBool;
         char typeChar;
+        
         while ((input = Console.ReadLine()) != "END")
         {
             if (int.TryParse(input, out typeInt)) Console.WriteLine($"{input} is integer type");
