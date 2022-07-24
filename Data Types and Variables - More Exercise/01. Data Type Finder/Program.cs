@@ -6,6 +6,7 @@
 //•	Strings
 //Print the result in the following format: "{input} is {data type} type"
 
+
 using System;
 
 
@@ -18,7 +19,6 @@ class Program
         double typeDouble;
         bool typeBool;
         char typeChar;
-        
         while ((input = Console.ReadLine()) != "END")
         {
             if (int.TryParse(input, out typeInt)) Console.WriteLine($"{input} is integer type");
