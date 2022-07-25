@@ -6,7 +6,6 @@
 //•	Strings
 //Print the result in the following format: "{input} is {data type} type"
 
-
 using System;
 
 
