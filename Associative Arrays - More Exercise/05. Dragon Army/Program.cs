@@ -79,7 +79,6 @@ internal class Program
         PrintResults(dragonRooster);
     }
 
-
     private static void OverwriteStats(Dictionary<string, SortedDictionary<string, Dragon>> dragonRooster, string[] tokens)
     {
         string type = tokens[0];
