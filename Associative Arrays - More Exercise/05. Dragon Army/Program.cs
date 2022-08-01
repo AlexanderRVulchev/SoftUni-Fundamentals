@@ -103,7 +103,6 @@ internal class Program
             dragonRooster[type][name].Armor = 10;
     }
 
-
     private static void PrintResults(Dictionary<string, SortedDictionary<string, Dragon>> dragonRooster)
     {
         foreach (var dragonType in dragonRooster)
