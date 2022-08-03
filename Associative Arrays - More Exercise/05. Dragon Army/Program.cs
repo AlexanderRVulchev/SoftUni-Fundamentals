@@ -24,7 +24,6 @@
 //•	The dragon's type and name are each one word only, starting with a capital letter.
 //•	Damage health and armor are integers in the range [0…100000] or null.
 
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
